@@ -1,30 +1,52 @@
 HEIC to JPG Converter
-Simple command-line tool to convert HEIC images to JPG on macOS.
+
+A simple and lightweight command-line tool to convert HEIC images to JPG on macOS.
 
 Why?
-AirDrop photos from your iPhone in HEIC format? Convert them to JPG with one command.
+
+When you AirDrop photos from an iPhone, they often arrive in HEIC format, which many apps and tools don’t support well.
+
+This script converts all HEIC images in a folder to JPG with one command.
 
 Features
-no dependencies
-zero resource usage when not running
-converts all HEIC files in current directory
-fast and lightweight
+
+🚀 Fast — Uses the macOS native sips tool
+
+🧪 No dependencies
+
+💤 Zero resource usage when idle
+
+📂 Converts all HEIC files in the current directory
+
+🪶 Lightweight and simple
+
 Installation
-Download heic2jpg.sh
-Make it executable:
+1. Download the script
+
+Download heic2jpg.sh from the repository.
+
+2. Make it executable
 chmod +x heic2jpg.sh
-(Optional) Add to your PATH or create an alias:
+
+3. (Optional) Add to your PATH via alias
 echo 'alias heic2jpg="~/heic2jpg.sh"' >> ~/.zshrc
 source ~/.zshrc
+
 Usage
-Navigate to any folder with HEIC files and run:
+
+Navigate to any folder that contains .HEIC files and run:
 
 ./heic2jpg.sh
-Or if you set up the alias:
+
+
+If you created the alias earlier:
 
 heic2jpg
-All HEIC files in that folder will be converted to JPG.
+
+
+All .HEIC files in that directory will be converted to .jpg.
 
 Requirements
-macOS (uses built-in sips command)
 
+macOS
+(uses the built-in sips command)
